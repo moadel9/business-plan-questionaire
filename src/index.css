@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@font-face {
+  font-family: "lightDin";
+  src: url(./assets/fonts/lightDin.otf);
+}
+@font-face {
+  font-family: "regularDin";
+  src: url(./assets/fonts/regularDin.otf);
+}
+@font-face {
+  font-family: "boldDin";
+  src: url(./assets/fonts/boldDin.otf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+body {
+  margin: 0;
+  font-family: "lightDin" !important;
+  background-image: url("./assets/bg5.jpg");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50% 100%;
+  background-position: right;
+
+  /* background-position: center center; */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* padding: 2rem; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.main {
+  width: 45vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #03b5ed;
+  /* background-color: #fed605; */
+}
+h1 {
+  font-size: 4rem !important;
+  color: white;
+}
+.main p {
+  font: "regularDin";
+  font-size: 1.2rem;
+  color: white;
+}
+.generateButton {
+  background-color: #040442;
+  border-radius: 4rem;
+  font-family: "boldDin";
+  border: none;
+  color: white;
+  padding: 1rem;
+  transition: ease-in 0.3s;
+}
+.generateButton:hover {
+  background-color: red;
+}
+
+/* ///////////////////modal */
+.ourModal {
+  border-radius: 0;
+  max-width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ourModal .modal-content {
+  border: none;
+  padding: 2rem 1rem;
+  padding-bottom: 0;
+  border-radius: 20px;
+  max-width: 50vw;
+  min-height: 50vh;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7 !important;
+}
+.innerModal {
+  width: auto;
+  border-radius: 2px;
+  display: flex;
+  position: relative;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+  padding: 4rem;
+  padding-top: 2rem;
+  color: black;
+}
+.innerModal input[type="radio"] {
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.questions p {
+  font-size: 1rem;
+  color: #014f66;
+}
+
+/* input:focus {
+  outline: 2px #014f66;
+} */
+input {
+  border: 0;
+  border-radius: 0;
+  background-color: #f6f6f6;
+  color: #014f66;
+  padding: 0.3rem;
+}
+
+input::placeholder {
+  color: rgb(197, 193, 193);
+}
+.title {
+  font-family: "boldDin";
+  color: #014f66;
+}
+small {
+  font-family: "boldDin";
+  color: #03b5ed;
+}
+.title p {
+  font-size: 1rem;
+  color: rgb(161, 161, 161);
+}
+.questions label {
+  font-size: 0.9rem;
+  color: black;
+}
+.next {
+  border-radius: 4rem;
+  font-family: "boldDin";
+  border: solid 2px #040442;
+  padding: 0.7rem 3rem;
+  padding-right: 2rem;
+  transition: ease-in 0.3s;
+  background-color: #040442;
+  color: white;
+}
+.next:hover {
+  background-color: #fff;
+  color: #040442;
+}
+.next.back {
+  border: none;
+  padding: 0.7rem 0rem;
+  background-color: #fff;
+  color: #040442;
+}
+.next.submit {
+  padding: 0.7rem 1rem;
+}
+input[type="number"] {
+  width: 40%;
+  border-color: #040442;
+  border: solid 2px;
+}
+
+input[type="number"]:focus {
+  outline: none !important;
+  border-color: #040442;
+  border: solid 2px;
+}
+
+input:disabled {
+  background-color: rgb(163, 163, 163);
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.error {
+  font-size: 0.9rem !important;
+}
+.answer {
+  font-family: "boldDin";
+  font-weight: bolder;
+  color: #014f66 !important;
+}
+.loading {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.final {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-family: "boldDin";
+  color: #040442;
+}
+.final i {
+  color: #040442;
+  margin-top: 1rem;
+}
