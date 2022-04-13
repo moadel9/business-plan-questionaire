@@ -164,7 +164,7 @@ const FirstSection = ({ question1Answers, question1, question2, question3, setQu
       <div className="d-flex justify-content-end"></div>
       <div className="d-flex mt-5 justify-content-between">
         <button className="next back" onClick={() => setShowModal(false)}>
-          <i className="fa-solid fa-arrow-left mx-2"></i>Cancel
+          Cancel
         </button>
         <button className="next" onClick={submit}>
           Next<i className="fa-solid fa-arrow-right mx-2"></i>
